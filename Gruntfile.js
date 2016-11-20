@@ -26,15 +26,15 @@ module.exports = function (grunt) {
 
     'webpack-dev-server': {
       options: {
-        hot: true,
+        hot: true,//开启热更新
         port: 8000,
         webpack: webpackDevConfig,
         publicPath: '/assets/',
-        contentBase: './<%= pkg.src %>/'
+        contentBase: './<%= pkg.src %>/' //指向源文件 源文件修改可以实时更新
       },
 
       start: {
-        keepAlive: true
+        keepAlive: true // grunt task不退出
       }
     },
 

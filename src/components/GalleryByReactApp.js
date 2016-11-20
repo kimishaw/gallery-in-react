@@ -20,7 +20,7 @@ imageDatas = (function genImageURL(imageDatasArr) {
     }
 
     return imageDatasArr;
-})(imageDatas);
+})(imageDatas); //只使用一次 可以做成自执行函数
 
 /*
  * 获取区间内的一个随机值
